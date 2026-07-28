@@ -30,7 +30,7 @@ function renderTodos() {
 
 // UPDATE THE FOLDER STAT
 const activeCount = todos.filter((t) => !t.completed).length; 
-taskCount.textContent (`you have ${activeCount} task${activeCount !== 1 ? 's' : ''} left`);
+taskCount.textContent = `you have ${activeCount} task${activeCount !== 1? 's' : ''} left`;
 
 // SAVE TO LOCAL STORAGE
 localStorage.setItem('todos', JSON.stringify(todos));

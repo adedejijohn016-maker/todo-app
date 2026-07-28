@@ -31,6 +31,7 @@ body {
   width: 100%;
   max-width: 420px;
   padding: 1.5rem;
+  position: relative;
   border-radius: 12px;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
@@ -110,6 +111,9 @@ li {
   background: transparent;
   color: var(--text-light);
   padding: 0;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 #clear-btn:hover {
