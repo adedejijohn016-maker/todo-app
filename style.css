@@ -111,12 +111,18 @@ li {
   background: transparent;
   color: var(--text-light);
   padding: 0;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  cursor: pointer;
 }
 
 #clear-btn:hover {
   color: var(--text);
   background: transparent;
+}
+
+#task-count {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
 }
