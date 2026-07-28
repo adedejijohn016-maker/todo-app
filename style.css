@@ -119,10 +119,17 @@ li {
   background: transparent;
 }
 
-#task-count {
+/* total tasks in the top-right of the card */
+#total-count {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+/* remaining tasks shown on the left side of the footer */
+#task-count {
   font-size: 0.95rem;
   color: var(--text-light);
 }

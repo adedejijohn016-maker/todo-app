@@ -6,6 +6,7 @@ const todoForm = document.getElementById('todo-form');
 const todoInput = document.getElementById('todo-input');
 const todoList = document.getElementById('todo-list');
 const taskCount = document.getElementById('task-count');
+const totalCount = document.getElementById('total-count');
 const clearBtn = document.getElementById('clear-btn');
 
 
@@ -31,6 +32,7 @@ function renderTodos() {
 // UPDATE THE FOLDER STAT
 const activeCount = todos.filter((t) => !t.completed).length; 
 taskCount.textContent = `you have ${activeCount} task${activeCount !== 1? 's' : ''} left`;
+if (totalCount) totalCount.textContent = `${todos.length} total`;
 
 // SAVE TO LOCAL STORAGE
 localStorage.setItem('todos', JSON.stringify(todos));
@@ -89,3 +91,6 @@ function escapeHTML(str) {
   });
 
   clearBtn.addEventListener('click', clearCompleted);
+
+// initial render
+renderTodos();
